@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: edmchc_dev
+  username: edmchc_dev
+  password: edmchc_dev
+
+test:
+  <<: *default
+  database: edmchc_test
+  username: edmchc_test
+  password: edmchc_test
+
+production:
+  <<: *default
+  database: edmchc
+  username: edmchc
+  password: edmchc
