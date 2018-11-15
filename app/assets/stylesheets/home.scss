@@ -1,3 +1,38 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bulma";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-bottom: 3.25rem;
+}
+
+section.is-fullheight-with-navbar > div.hero-video {
+  height: calc(100vh - 3.25rem);
+}
+
+section.hero:nth-of-type(1) div.hero-head {
+  background-color: white;
+}
+section.hero:nth-of-type(1) div.column {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.hero:nth-of-type(1) img {
+  height: 10rem;
+  width: auto;
+}
+section.hero:nth-of-type(1) {
+  background-color: black;
+}
+video {
+  opacity: 0.3;
+  max-width: inherit;
+}
+section#actividades strong {
+  color: #131313;
+}
