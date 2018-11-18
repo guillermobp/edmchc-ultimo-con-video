@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2018-11-18
+  titulo: MyString
+  expositor: MyString
+  lugar: MyString
+  hora_inicio: 2018-11-18 19:23:51
+  hora_termino: 2018-11-18 19:23:51
+  encuentro: one
+
+two:
+  fecha: 2018-11-18
+  titulo: MyString
+  expositor: MyString
+  lugar: MyString
+  hora_inicio: 2018-11-18 19:23:51
+  hora_termino: 2018-11-18 19:23:51
+  encuentro: two
