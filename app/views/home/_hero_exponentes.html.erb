@@ -20,7 +20,7 @@
             </div>
 
             <div class="content">
-              <%=raw e.bio[0..400] %>
+              <%= simple_format(truncate(e.bio, length: 400, separator: '')) %>
               <p><%= link_to 'Ver más' %>
             </div>
           </div>
