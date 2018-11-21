@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_18_222351) do
+ActiveRecord::Schema.define(version: 2018_11_20_233428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 2018_11_18_222351) do
     t.integer "version"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "exponentes", force: :cascade do |t|
+    t.bigint "encuentro_id"
+    t.string "uri_foto"
+    t.string "nombre"
+    t.text "bio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["encuentro_id"], name: "index_exponentes_on_encuentro_id"
   end
 
   add_foreign_key "charlas", "encuentros"
