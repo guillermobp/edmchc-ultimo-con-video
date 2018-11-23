@@ -9,7 +9,11 @@
           <div class="card" style="height:100%">
             <div class="card-image">
               <figure class="image is-square">
-                <img src="<%= e.uri_foto %>" alt="Foto de <%= e.nombre %>">
+                <% if (e.foto.attached?) %>
+                  <img src="<%= url_for(e.foto) %>" alt="Foto de <%= e.nombre %>">
+                <% else %>
+                  <img src="<%= e.uri_foto %>" alt="Foto de <%= e.nombre %>">
+                <% end %>
               </figure>
             </div>
             <div class="card-content">
