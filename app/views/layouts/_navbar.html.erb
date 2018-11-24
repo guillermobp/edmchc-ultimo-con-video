@@ -1,0 +1,27 @@
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <%= link_to 'Inicio', root_path, { class: 'navbar-item' } %>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Exponentes</a>
+            <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item">Nuevo</a>
+                <a class="navbar-item">Buscar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Perfil</a>
+            <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item">Mi Cuenta</a>
+                <a class="navbar-item">Configuración</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</nav>
