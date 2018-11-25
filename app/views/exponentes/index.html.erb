@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @exponentes.each do |e| %>
+        <tr>
+            <td>
+                <% if e.foto.attached? %>
+                    <%= image_tag e.foto.variant(
+                        combine_options: {
+                            resize: '48',
+                            crop: '48x48+0+0',
+                            gravity: 'north'
+                        }
+                    ), class: 'is-square' %>
+                <% end %>
+            </td>
+            <td><%= e.nombre %></td>
+            <td><%= link_to 'editar', edit_exponente_path(e), { class: 'button' } %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>

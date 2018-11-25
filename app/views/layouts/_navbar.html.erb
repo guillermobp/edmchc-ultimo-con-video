@@ -6,8 +6,8 @@
         <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Exponentes</a>
             <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item">Nuevo</a>
-                <a class="navbar-item">Buscar</a>
+                <%= link_to 'Nuevo', new_exponente_path, { class: 'navbar-item' } %>
+                <%= link_to 'Administrar', exponentes_path, { class: 'navbar-item' } %>
             </div>
         </div>
     </div>
