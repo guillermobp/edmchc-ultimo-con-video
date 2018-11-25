@@ -7,10 +7,8 @@ class ExponentesController < ApplicationController
     @exponente = Exponente.new(exponente_params)
     @exponente.encuentro = Encuentro.last
     if (@exponente.save)
-      byebug
       redirect_to root_path
     else
-      byebug
       redirect_to new_exponente_path
     end
   end
