@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_23_090918) do
+ActiveRecord::Schema.define(version: 2018_11_25_193903) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,7 +57,6 @@ ActiveRecord::Schema.define(version: 2018_11_23_090918) do
 
   create_table "exponentes", force: :cascade do |t|
     t.bigint "encuentro_id"
-    t.string "uri_foto"
     t.string "nombre"
     t.text "bio"
     t.datetime "created_at", null: false
