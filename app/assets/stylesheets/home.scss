@@ -36,3 +36,17 @@ video {
 section#actividades strong {
   color: #131313;
 }
+
+// Galería en escala de grises.
+section#fotos-charlas {
+  .columns:hover {
+    filter: grayscale(100%);
+    .column {
+      filter: opacity(25%);
+      &:hover {
+        filter: opacity(100%);
+        cursor: crosshair;
+      }
+    }
+  }
+}

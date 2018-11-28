@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @encuentros.each do |e| %>
+        <tr>
+            <td><%= e.version %></td>
+            <td><%= link_to 'editar', edit_encuentro_path(e) %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
