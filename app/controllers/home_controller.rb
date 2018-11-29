@@ -5,5 +5,6 @@ class HomeController < ApplicationController
     @dias_charlas = Encuentro.last.charlas.group(:fecha).select(:fecha)
     @charlas = Encuentro.last.charlas
     @exponentes = Encuentro.last.exponentes
+    @encuentro = Encuentro.last
   end
 end
